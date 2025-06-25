@@ -24,6 +24,8 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "dist/bit-3",
+            "baseHref": "/bit-3/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
