@@ -9,7 +9,7 @@
 - Navegación entre páginas y manejo de errores (404).
 - Estilo visual único con colores suaves, tarjetas personalizadas y transiciones suaves.
 
-## 🛠 Herramientas usadas
+## Herramientas usadas
 
 - Angular
 - TypeScript

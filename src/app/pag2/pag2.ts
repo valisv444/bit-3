@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, ActivatedRoute } from '@angular/router'; // ✅ asegúrate de importar RouterModule
+import { RouterModule, ActivatedRoute } from '@angular/router'; 
 import { AnimeService } from '../anime.service';
 
 @Component({
   selector: 'app-pag2',
   standalone: true,
-  imports: [CommonModule, RouterModule], // ✅ agrega RouterModule aquí
+  imports: [CommonModule, RouterModule], 
   templateUrl: './pag2.html',
   styleUrls: ['./pag2.scss']
 })

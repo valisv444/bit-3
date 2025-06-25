@@ -7,7 +7,7 @@ export const routes: Routes = [
   { path: '', redirectTo: '/pag1', pathMatch: 'full' },
   { path: 'pag1', component: Pag1 },
   { path: 'pag2/all', component: Pag2 },
-  { path: 'pag2/:id', component: Pag2 }, // 👈 NUEVO: ruta individual
+  { path: 'pag2/:id', component: Pag2 }, 
   { path: '**', component: Pag404 }
 ];
 
