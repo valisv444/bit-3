@@ -1,4 +1,4 @@
-/* Reset básico y configuración global */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,14 +13,14 @@ html, body {
   color: #3a003a;
 }
 
-/* Envoltura principal */
+
 body, app-root, .app-wrapper {
   margin: 0;
   padding: 0;
   background-color: #f8c7dc;
 }
 
-/* Enlaces generales */
+
 a {
   font-size: 18px;
   padding: 14px 40px;
@@ -118,6 +118,7 @@ footer {
   }
 
   .footer-line {
+    border: 4px gold;
     height: 2px;
     width: 120px;
     background: gold;

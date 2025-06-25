@@ -1,10 +1,40 @@
 
-.footer {
+.moon-barbie-box {
+  background: linear-gradient(to top, #ff69b4, #ff1493, #e10088);
+  border: 4px double #d4af37; // borde dorado
+  border-radius: 20px;
+  padding: 2rem;
+  color: #fff0f8;
+  box-shadow:
+    0 -8px 24px rgba(255, 182, 193, 0.4),
+    inset 0 0 10px rgba(255, 240, 250, 0.2),
+    0 0 12px rgba(255, 192, 203, 0.3);
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  background-color: #111;
-  color: #eee;
-  margin-top: 2rem;
-  border-top: 1px solid #333;
+  transition: all 0.3s ease-in-out;
+
+  h2, h3 {
+    font-family: 'Segoe UI', sans-serif;
+    color: #fffafc;
+    text-shadow: 0 2px 4px rgba(255, 105, 180, 0.7);
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #fff0f5;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+
+    strong {
+      color: #ffdbe9;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 -12px 28px rgba(255, 105, 180, 0.5),
+      inset 0 0 12px rgba(255, 240, 250, 0.35),
+      0 0 20px rgba(255, 182, 193, 0.5);
+  }
 }
