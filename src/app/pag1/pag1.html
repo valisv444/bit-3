@@ -1,0 +1,15 @@
+<h2>🌙 Personajes de Sailor Moon</h2>
+
+<div class="cards">
+  <div 
+    class="card"
+    *ngFor="let character of characters"
+    [routerLink]="['/pag2', character.id]"
+  >
+    <img [src]="character.image" [alt]="character.name" />
+    <h3>{{ character.name }}</h3>
+    <p><strong>ID:</strong> {{ character.id }}</p>
+    <p><strong>Rol:</strong> {{ character.role }}</p>
+    <p><strong>Seiyuu:</strong> {{ character.voiceActors}}</p>
+  </div>
+</div>

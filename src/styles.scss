@@ -1,1 +1,163 @@
-/* You can add global styles to this file, and also import other style files */
+/* Reset básico y configuración global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Orbitron', sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom, #fff0f5, #ffe6f0);
+  color: #3a003a;
+}
+
+/* Envoltura principal */
+body, app-root, .app-wrapper {
+  margin: 0;
+  padding: 0;
+  background-color: #f8c7dc;
+}
+
+/* Enlaces generales */
+a {
+  font-size: 18px;
+  padding: 14px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #b03060;
+  background: linear-gradient(to bottom right, #fff0f5, #ffe6f0);
+  border: 2px solid #f5c1d3;
+  box-shadow:
+    0 2px 5px rgba(255, 182, 193, 0.3),
+    inset 0 0 5px rgba(255, 182, 193, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  background: linear-gradient(to bottom right, #fcd6e2, #ffe6f0);
+  transform: scale(1.08);
+  color: #8b004f;
+  box-shadow:
+    0 4px 12px rgba(255, 192, 203, 0.5),
+    inset 0 0 10px rgba(255, 192, 203, 0.3);
+}
+
+/* Páginas */
+main, section, .page-content {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background: linear-gradient(135deg, #f72585 0%, #ffb3c6 100%);
+  border-top: 3px solid gold;
+  color: #fff0f5;
+  font-family: 'Orbitron', cursive, sans-serif;
+  font-size: 0.95rem;
+  padding: 2rem 1.5rem 1.5rem;
+  box-shadow: 0 -5px 25px rgba(247, 37, 133, 0.25);
+  text-align: center;
+  position: relative;
+  z-index: 10;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 20px;
+    background: linear-gradient(to top, #f72585 0%, #f8c7dc 100%);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    align-items: start;
+    justify-content: center;
+
+    > div {
+      border-top: 2px solid gold;
+      padding-top: 1rem;
+    }
+  }
+
+  h4 {
+    color: gold;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 0.3rem 0;
+
+      a {
+        text-decoration: none;
+        color: #ffeaea;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: gold;
+        }
+      }
+    }
+  }
+
+  .footer-line {
+    height: 2px;
+    width: 120px;
+    background: gold;
+    margin: 1.5rem auto;
+    animation: shimmer 2s infinite alternate;
+  }
+
+  .footer-bottom {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #ffe0f5;
+    opacity: 0.85;
+  }
+
+  @keyframes shimmer {
+    from {
+      width: 60px;
+      background: #ff8fab;
+    }
+    to {
+      width: 120px;
+      background: gold;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-inner {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    footer {
+      padding: 2rem 1rem;
+    }
+  }
+}
+
+/* Animación para elementos mágicos */
+@keyframes twinkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.15); }
+}
+
